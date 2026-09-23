@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecvoltz — Energia Solar</title>
+  <meta name="description" content="Tecvolts: energia solar, instalações e manutenção elétrica. Reduza sua conta de luz em até 95%.">
+  <link rel="icon" type="image/png" href="media/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@google/model-viewer@^4.0.0/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="brand" aria-label="Tecvolts — início">
+        <span class="brand__bolt" aria-hidden="true">
+          <img src="media/logo-icon.png">
+          <!-- <svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg> -->
+        </span>
+        <span class="brand__name">Tec<span>voltz</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#obras">Obras</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a href="#contato" class="btn btn--primary btn--sm">Orçamento grátis</a>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="sparks" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow"><i></i> Energia solar • Elétrica residencial e empresarial</span>
+          <h1>Transforme o sol em <em>economia</em> todos os meses.</h1>
+          <p class="lead">Projetamos, instalamos e cuidamos do seu sistema de energia solar e de toda a parte elétrica do seu imóvel. Reduza sua conta de luz em até <strong>95%</strong> com quem entende de energia.</p>
+          <div class="hero__actions">
+            <a href="#simulador" class="btn btn--primary">Simular minha economia</a>
+            <a href="#servicos" class="btn btn--ghost">Ver serviços</a>
+          </div>
+          <ul class="hero__trust">
+            <li><strong>25 anos</strong><span>de vida útil dos painéis</span></li>
+            <li><strong>Até 95%</strong><span>de economia na conta</span></li>
+            <li><strong>3 a 5 anos</strong><span>de retorno médio</span></li>
+          </ul>
+        </div>
+
+        <!-- Composição "produto em destaque" -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="sun"></div>
+
+          <div class="painel">
+            <model-viewer
+              class="painel__model"
+              data-modelo-slug="painel"
+              src="media/painelsolar-tecvolts.glb"
+              alt="Modelo 3D do painel solar Tecvolts"
+              camera-controls
+              disable-zoom
+              auto-rotate
+              auto-rotate-delay="0"
+              rotation-per-second="18deg"
+              camera-orbit="0deg 75deg auto"
+              interaction-prompt="none"
+              loading="eager"
+              shadow-intensity="1"
+            ></model-viewer>
+          </div>
+
+          <!-- "nós" flutuantes, inspirados nos cards do workflow -->
+          <div class="chip chip--a"><b>+ 1.240 kWh</b><span>gerados no mês</span></div>
+          <div class="chip chip--b"><b>R$ 38</b><span>conta de luz estimada</span></div>
+          <div class="chip chip--c"><span class="dot"></span> Sistema online</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><i></i> O que fazemos</span>
+          <h2>Soluções completas em energia</h2>
+          <p>Do projeto solar à tomada da sua cozinha: uma única equipe cuidando de toda a energia do seu imóvel.</p>
+        </header>
+
+        <div class="services">
+          <article class="card card--featured">
+            <div class="card__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div>
+            <h3>Energia Solar Fotovoltaica</h3>
+            <p>Projeto, homologação na concessionária, instalação e monitoramento de sistemas on-grid para casas, comércios e indústrias.</p>
+            <ul>
+              <li>Projeto personalizado</li>
+              <li>Homologação inclusa</li>
+              <li>Monitoramento pelo app</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M13 11l-3 4h4l-3 4"/></svg></div>
+            <h3>Instalações Elétricas</h3>
+            <p>Instalações residenciais, comerciais e prediais, quadros de distribuição e padrão de entrada, dentro das normas.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div>
+            <h3>Manutenção e Reparos</h3>
+            <p>Diagnóstico de curtos, disjuntores que desarmam, troca de fiação e revisão preventiva.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="10" height="18" rx="2"/><path d="M15 8h2a2 2 0 0 1 2 2v5a1.5 1.5 0 0 0 3 0V9l-2-2"/><path d="M11 8l-2 3h3l-2 3"/></svg></div>
+            <h3>Carregador Veicular</h3>
+            <p>Instalação de wallbox para carros elétricos, integrada ao seu sistema solar.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg></div>
+            <h3>Laudos e Projetos</h3>
+            <p>Projetos elétricos, laudos técnicos e SPDA (para-raios) com responsável técnico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA (fluxo em nós) ============ -->
+    <section class="section section--flow" id="como-funciona">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><i></i> Como funciona</span>
+          <h2>Do orçamento à economia em 4 etapas</h2>
+          <p>Um processo simples e transparente — você acompanha cada passo.</p>
+        </header>
+
+        <ol class="flow">
+          <li class="node">
+            <span class="node__tag">01 · Análise</span>
+            <h3>Conta de luz</h3>
+            <p>Você envia sua conta e analisamos seu consumo e o espaço disponível.</p>
+          </li>
+          <li class="node">
+            <span class="node__tag">02 · Projeto</span>
+            <h3>Dimensionamento</h3>
+            <p>Montamos o projeto ideal com proposta detalhada e retorno do investimento.</p>
+          </li>
+          <li class="node">
+            <span class="node__tag">03 · Instalação</span>
+            <h3>Equipe própria</h3>
+            <p>Instalação rápida e segura, com homologação feita por nós na concessionária.</p>
+          </li>
+          <li class="node node--out">
+            <span class="node__tag">04 · Resultado</span>
+            <h3>Economia</h3>
+            <p>Sistema ligado, monitorado pelo app e sua conta caindo já no próximo ciclo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ OBRAS REALIZADAS ============ -->
+    <section class="section" id="obras">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow"><i></i> Obras realizadas</span>
+          <h2>Projetos entregues pela Tecvoltz</h2>
+          <p>Instalações reais, feitas pela nossa equipe, gerando economia todos os dias.</p>
+        </header>
+
+        <div class="gallery">
+          <figure class="gallery__item">
+            <img src="media/p1.jpg" alt="Painéis solares instalados em telhado metálico curvo" loading="lazy">
+          </figure>
+          <figure class="gallery__item">
+            <img src="media/p2.jpg" alt="Sistema fotovoltaico instalado em telhado residencial" loading="lazy">
+          </figure>
+          <figure class="gallery__item">
+            <img src="media/p3.jpg" alt="Painéis solares instalados em telhado comercial" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIMULADOR ============ -->
+    <section class="section" id="simulador">
+      <div class="container sim">
+        <div class="sim__copy">
+          <span class="eyebrow"><i></i> Simulador</span>
+          <h2>Quanto você pode economizar?</h2>
+          <p>Informe o valor médio da sua conta de luz e veja uma estimativa do sistema ideal e da sua economia.</p>
+          <p class="note">Valores estimados para fins ilustrativos. A proposta final depende da análise do seu imóvel e da tarifa da sua região.</p>
+        </div>
+
+        <div class="sim__box">
+          <label for="bill">Valor médio da conta</label>
+          <div class="sim__value"><span>R$</span><output id="billOut">450</output></div>
+          <input type="range" id="bill" min="150" max="5000" step="50" value="450">
+          <div class="sim__range"><span>R$ 150</span><span>R$ 5.000</span></div>
+
+          <div class="sim__results">
+            <div><span>Economia por mês</span><b id="rMonth">R$ 405</b></div>
+            <div><span>Economia em 25 anos</span><b id="rLife">R$ 121 mil</b></div>
+            <div><span>Potência sugerida</span><b id="rKwp">4,4 kWp</b></div>
+            <div><span>Painéis (≈ 550 W)</span><b id="rPanels">8</b></div>
+          </div>
+
+          <a href="#contato" class="btn btn--primary btn--block">Quero uma proposta real</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / CONTATO ============ -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="cta">
+          <div class="cta__glow" aria-hidden="true"></div>
+          <div class="cta__copy">
+            <h2>Pronto para gerar sua própria energia?</h2>
+            <p>Fale com a Tecvolts e receba um orçamento sem compromisso.</p>
+            <ul class="cta__info">
+              <li><b>WhatsApp:</b> (17) 99130-1698</li>
+              <li><b>E-mail:</b> tecvoltzenergiasolar@gmail.com</li>
+              <li><b>Atendimento:</b> seg. a sáb., 8h às 18h</li>
+            </ul>
+          </div>
+
+          <form class="form" action="#" method="post">
+            <div class="form__row">
+              <label>Nome<input type="text" name="nome" placeholder="Seu nome" required></label>
+              <label>Telefone<input type="tel" name="telefone" placeholder="(00) 00000-0000" required></label>
+            </div>
+            <label>Serviço de interesse
+              <select name="servico">
+                <option>Energia solar</option>
+                <option>Instalação elétrica</option>
+                <option>Manutenção / reparo</option>
+                <option>Quadro ou padrão de entrada</option>
+                <option>Carregador veicular</option>
+                <option>Projeto / laudo / SPDA</option>
+              </select>
+            </label>
+            <label>Mensagem<textarea name="mensagem" rows="3" placeholder="Conte um pouco sobre o que precisa"></textarea></label>
+            <button type="submit" class="btn btn--primary btn--block">Enviar pedido de orçamento</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="brand">
+        <span class="brand__bolt" aria-hidden="true"><img src="media/logo-icon.png"></span>
+        <span class="brand__name">Tec<span>voltz</span></span>
+      </a>
+      <p>© <span id="year"></span> Tecvoltz — Energia Solar</p>
+    </div>
+  </footer>
+
+  <div class="credits">
+    <div class="container credits__inner">
+      <div class="credits__brand">
+        <img src="media/axionlogo.png" alt="Axion" class="credits__logo">
+        <span>Axion</span>
+      </div>
+      <div class="credits__info">
+        <span>Desenvolvido por Diego Renato</span>
+        <a href="tel:+5517997170139">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (17) 99717-0139
+        </a>
+        <a href="mailto:dev.drenato@gmail.com">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          dev.drenato@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/5517991301698?text=Ol%C3%A1%2C%20eu%20estou%20vindo%20do%20site%20e%20gostaria%20de%20ser%20atendido%21" class="whatsapp-float">
+    <img src="media/whatsappicons.png" alt="WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
