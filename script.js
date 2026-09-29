@@ -81,8 +81,8 @@ document.querySelector('.form').addEventListener('submit', e => {
   const servico = form.servico.value;
   const mensagem = form.mensagem.value.trim();
 
-  const texto = `Olá! Quero um orçamento.\n\nNome: ${nome}\nTelefone: ${telefone}\nServiço: ${servico}` +
-    (mensagem ? `\nMensagem: ${mensagem}` : '');
+  const texto = `Olá, Tecvoltz! Gostaria de um orçamento.\n\n*Nome:* ${nome}\n*Telefone:* ${telefone}\n*Serviço:* ${servico}` +
+    (mensagem ? `\n*Mensagem:* ${mensagem}` : '');
 
   window.open(`https://wa.me/5517991301698?text=${encodeURIComponent(texto)}`, '_blank');
 });
