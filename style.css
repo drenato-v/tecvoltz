@@ -299,7 +299,6 @@ input[type="range"] { width: 100%; accent-color: var(--amber); height: 6px; curs
 .credits { padding: 18px 0 calc(18px + env(safe-area-inset-bottom, 0px)); background: var(--bg-2); border-top: 1px solid rgba(255, 190, 110, .06); }
 .credits__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 24px; font-size: 13px; color: var(--muted); }
 .credits__brand { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--text); text-decoration: none; }
-.credits__info span a { display: inline; color: var(--text); }
 .credits__logo { width: 22px; height: 22px; object-fit: contain; border-radius: 5px; }
 .credits__info { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 20px; }
 .credits__info a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); text-decoration: none; transition: color .2s; }
